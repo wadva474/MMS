@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/ml_item_padding_top"
+    android:paddingBottom="@dimen/ml_item_padding_bottom">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/ml_item_margin_from_border"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/bg_message_received"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:maxWidth="260dp"
+            android:minWidth="36dp"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            android:text="Hi, this is a received text message!"
+            android:textColor="@color/tv_received_message"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/cv_text_message"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:40"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_synced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="synced"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

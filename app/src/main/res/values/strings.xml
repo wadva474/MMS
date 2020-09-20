@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Inmate App</string>
+    <string name="title_home">Messages</string>
+    <string name="title_dashboard">Settings</string>
+    <string name="title_notifications">Notifications</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    "Unique ID"
+
+    <!-- Buttons -->
+    <string name="btn_set">Set</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Yes</string>
+
+    <!-- LABELS -->
+    <string name="label_settings">Settings</string>
+    <string name="label_messages_settings">Messages Settings</string>
+    <string name="label_general_settings">General Settings</string>
+    <string name="label_automation_settings">Automation Settings</string>
+    <string name="label_chat">Chat</string>
+
+    <string name="label_current_value">Current Value: </string>
+
+    <string name="label_auto_delete_messages">Auto Delete Messages</string>
+    <string name="label_auto_delete_pending_messages">Auto Delete Pending Messages</string>
+    <string name="label_number_of_retries_for_pending_messages">No. of retries for the pending messages</string>
+    <string name="label_enable_auto_sync">Enable Auto Sync</string>
+    <string name="label_auto_sync_frequency">Auto Sync Frequency</string>
+
+    <string name="label_enter_unique_id">Enter Unique ID</string>
+
+    <!-- DESCRIPTIONS -->
+    <string name="description_auto_delete_messages">Automatically delete messages from Message app\'s inbox to save space on the phone.</string>
+    <string name="description_auto_delete_pending_messages">Automatically delete pending messages that have failed to be sent.</string>
+    <string name="description_number_of_retries_for_pending_messages">Set the number of retries before the app automatically deletes pending messages.</string>
+    <string name="description_enable_auto_sync">Allow app to periodically sync pending messages.</string>
+    <string name="description_auto_sync_frequency">Set how often the app syncs with the server for messages. (Seconds)</string>
+
+    <string name="description_enter_unique_id">Specify a unique ID for this device. Used by the server to identify which device is sending it messages.</string>
+
+    <!-- SMS delivery status -->
+    <string name="sms_status_success">SMS sent</string>
+    <string name="sms_delivery_status_failed">Failed to send SMS - Maybe insufficient air time onthe phone.</string>
+    <string name="sms_delivery_status_no_service">Failed to send SMS because service is currently unavailable</string>
+    <string name="sms_delivery_status_radio_off">Failed to send SMS because radio was explicitly turned off</string>
+    <string name="sms_delivery_status_null_pdu">Failed to send SMS because no pdu provided</string>
+    <string name="sms_delivered">SMS delivered</string>
+    <string name="sms_not_delivered">SMS not delivered</string>
+    <string name="sms_not_delivered_htc_device_retry">Device is retrying to send sms.</string>
+    <string name="sms_not_delivered_unknown_error">"Unknown error while sending sms."</string>
+
+
+    <string name="required_permissions_rationale">"Inmate requires these permissions to work."</string>
+
+</resources>

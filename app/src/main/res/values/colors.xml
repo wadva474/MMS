@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="light_gray">#D3D3D3</color>
+
+    <color name="bg_message_sent">@color/colorPrimary</color>
+    <color name="bg_message_received">@color/colorAccent</color>
+
+    // TextViews
+    <color name="tv_sent_message">@android:color/white</color>
+    <color name="tv_received_message">@android:color/black</color>
+</resources>

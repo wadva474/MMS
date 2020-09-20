@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/ml_item_padding_top"
+    android:paddingBottom="@dimen/ml_item_padding_bottom">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_photo_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/ml_item_margin_from_border"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/bg_message_sent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            <com.facebook.drawee.view.SimpleDraweeView-->
+<!--                android:id="@+id/sdv_chat_photo"-->
+<!--                android:layout_width="220dp"-->
+<!--                android:layout_height="220dp"-->
+<!--                android:transitionName="photo"-->
+<!--                fresco:backgroundImage="@android:color/black"-->
+<!--                fresco:fadeDuration="300"-->
+<!--                fresco:roundAsCircle="false"-->
+<!--                fresco:roundedCornerRadius="20dp"-->
+<!--                fresco:placeholderImageScaleType="fitXY"-->
+<!--                fresco:actualImageScaleType="centerCrop" />-->
+
+            <ProgressBar
+                android:id="@+id/pb_photo"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sdv_chat_photo"
+                android:layout_alignEnd="@+id/sdv_chat_photo"
+                android:layout_alignBottom="@+id/sdv_chat_photo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/cv_photo_message"
+        android:text="11:40"
+        android:textSize="10sp" />
+
+</RelativeLayout>

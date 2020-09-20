@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_settings">
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.codebase.inmateapp.ui.fragments.DialogsFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_dialogs" >
+        <action
+            android:id="@+id/action_navigation_messages_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.codebase.inmateapp.ui.fragments.SettingsFragment"
+        android:label="@string/label_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_general_settings"
+        android:name="com.codebase.inmateapp.ui.fragments.GeneralSettings"
+        android:label="@string/label_general_settings"
+        tools:layout="@layout/fragment_general_settings"/>
+
+    <fragment
+        android:id="@+id/navigation_automation_settings"
+        android:name="com.codebase.inmateapp.ui.fragments.AutomationSettings"
+        android:label="@string/label_automation_settings"
+        tools:layout="@layout/fragment_automation_settings"/>
+
+    <fragment
+        android:id="@+id/navigation_messages_settings"
+        android:name="com.codebase.inmateapp.ui.fragments.MessagesSettings"
+        android:label="@string/label_messages_settings"
+        tools:layout="@layout/fragment_messages_settings"/>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.codebase.inmateapp.ui.fragments.MessagesFragment"
+        android:label="@string/label_chat" />
+
+</navigation>
